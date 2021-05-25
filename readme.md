@@ -4,7 +4,7 @@ Autorzy:
  - Daniel Żymek
  - Sebastian Pietras
 ## Wykonane prace
- - [ ] Wytłumaczenie Sebastianowi jak działa git
+ - [x] Wytłumaczenie Sebastianowi jak działa git
  - [ ] Stworzenie pliku `index.html`
  - [ ] Zbudowanie szkieletu aplikacji
  - [ ] Zaimplementowanie SCSS
