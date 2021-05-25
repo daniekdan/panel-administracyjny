@@ -5,6 +5,7 @@ Autorzy:
  - Sebastian Pietras
 ## Wykonane prace
  - [x] Wytłumaczenie Sebastianowi jak działa git
+ - [x] Stworzenie gałęzi dla każdego
  - [ ] Stworzenie pliku `index.html`
  - [ ] Zbudowanie szkieletu aplikacji
  - [ ] Zaimplementowanie SCSS
