@@ -8,6 +8,7 @@ Autorzy:
  - [x] Stworzenie gałęzi dla każdego
  - [x] Stworzenie pliku `index.html`
  - [x] Zbudowanie szkieletu aplikacji
+ - [ ] Ogarnięcie szkieletu aplikacji, przygotowanie do stanu użyteczności publicznej
  - [ ] Zaimplementowanie SCSS
  - [ ] Responsywność
  - [ ] Skrypt JS z opiniami użytkowników na sliderze
