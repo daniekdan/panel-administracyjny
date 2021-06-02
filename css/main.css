@@ -26,7 +26,7 @@ body {
   grid-column: 2/8;
   -ms-grid-row: 1;
   grid-row: 1;
-  background-color: #3C3B6F;
+  background-color: #333C48;
   display: table;
 }
 
@@ -36,6 +36,10 @@ body {
   right: 10px;
   cursor: pointer;
   font-size: 1.6em;
+  color: #e7e6eb;
+}
+
+.header .log-out a {
   color: #e7e6eb;
 }
 
@@ -50,7 +54,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 15;
   grid-row: 1/16;
-  background-color: #3C3B6F;
+  background-color: #333C48;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -75,7 +79,7 @@ body {
 
 .navbar li:hover {
   color: white;
-  background-color: #323158;
+  background-color: #3c4653;
 }
 
 .container {
@@ -93,7 +97,7 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 6;
   grid-column: 2/8;
-  background-color: #3C3B6F;
+  background-color: #333C48;
   padding-top: 10px;
 }
 

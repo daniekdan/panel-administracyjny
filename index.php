@@ -13,7 +13,7 @@
 <body>
     <div class="header">
         <h1>Panel Administracyjny</h1>
-        <div class="log-out"><i class="fas fa-sign-out-alt"></i></div>
+        <div class="log-out"><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></div>
     </div>
     <div class="navbar">
         <div class="logo"><img src="img/logo.png" alt="logo"></div>
@@ -34,5 +34,13 @@
         <p>Projekt został wykonany przez:</p>
         <p>Adrian Lewek, Daniel Żymek, Sebastain Pietras</p>
     </div>
+
+    <?php 
+        session_start();
+        if ($_SESSION['username'] != 'Admin') {
+            header('location: login.php');
+            exit;
+        }
+    ?>
 </body>
 </html>
