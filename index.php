@@ -41,15 +41,12 @@ th, td {
         <center>
         <table id="t01">
           
-  <tr>
-    <th><a href="">treści</a><br><br>Tutaj mozesz dodawać, usuwać<br></r> oraz edytować  treści</br></th>
-    <th><a href="">Forum</a><br><br>Tutaj mieszczą sie informacje na<br>temat statystyk i forum</br></th> 
-    <th><a href="">Uzytkownicy</a><br><br>tutaj mozesz zarządzać<br>uzytkownikami </br></th>
-    <th><a href="">Grafika</a><br><br>w tym miejscu mozna skonfigurować<br> całą szate graficzną</br></th>
-    <th><a href="">Narzędzia</a><br><br>w tym miejscu znadziesz<br> wszystkie potrzebne narzędzia systemowe</br>
-</th>
- <th><a href="">System</a><br><br>Informacje na temat obecnego stanu systemu<br> oraz nadchodzących aktualizacji</br>
-</th>
+ 
+      <tr>
+    <th><a href="http://localhost/panel-administracjny/ostatnie_logi.php">Ostatnie logi </a><br><br>Brak logowań<br></r> </br></th>
+    <th><a href="http://localhost/panel-administracjny/odwiedziny.php">Odwiedziny</a>
+    <th><a href="https://pl-pl.facebook.com/">Facebook</a></th>
+
   </tr>
    <h1>Dashboard</h1>
    </center>
@@ -58,13 +55,13 @@ th, td {
 
     </div>
     <div class="navbar">
-       <tr>
-    <th><a href="">Ostatnie logi </a><br><br>Brak logowań<br></r> </br></th>
+    <th><a href="http://localhost/panel-administracjny/powiadomienia_systemowe.php">Powiadomienia systemowe</a><br><br>Brak powiadomień<br></r> Brak powiadomień<br>Brak powiadomień<br>Brak powiadomień<br>Brak powiadomień<br></br></th>
+ <th><a href="http://localhost/panel-administracjny/pami%C4%99%C4%87_strony.php">Pamięć</a></th>
+ <th><a href="">Powiadomienia z Facebooka</a></th>
 
 </div>
     <div class="container">
-       <tr>
-    <th><a href="">Powiadomienia</a><br><br>Brak powiadomień<br></r> Brak powiadomień<br>Brak powiadomień<br>Brak powiadomień<br>Brak powiadomień<br></br></th>
+     
       
         
     </div>
