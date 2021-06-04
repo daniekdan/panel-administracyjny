@@ -1,3 +1,29 @@
+<?php 
+    $dir = dirname(dirname(__FILE__));
+        $conn = new mysqli('sql11.freesqldatabase.com', 'sql11415253', 'w8V7l128UD', 'sql11415253');
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);   
+        }
+        if(isset($_POST['login'])){
+            $usernameW=$_POST['username'];
+            $passwordW=$_POST['passwd'];
+
+            $sql = "SELECT * FROM users";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    if (($usernameW == $row["login"])&&($passwordW == $row["password"])){
+                        session_start();
+                        $_SESSION['username'] = 'Admin';
+                        header('location: index.php');
+                    } else {
+                        echo "Zły login lub hasło";
+                    }
+                }
+            }
+        }
+        $conn->close();
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,32 +48,6 @@
         </form>
     </div>
 
-    <div class="wrongPasswd"><?php 
-        $dir = dirname(dirname(__FILE__));
-        $conn = new mysqli('sql11.freesqldatabase.com', 'sql11415253', 'w8V7l128UD', 'sql11415253');
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);   
-        }
-        if(isset($_POST['login'])){
-            $usernameW=$_POST['username'];
-            $passwordW=$_POST['passwd'];
-
-            $sql = "SELECT * FROM users";
-            $result = $conn->query($sql);
-            if ($result->num_rows > 0) {
-                while($row = $result->fetch_assoc()) {
-                    if (($usernameW == $row["login"])&&($passwordW == $row["password"])){
-                        session_start();
-                        $_SESSION['username'] = 'Admin';
-                        echo "<script> window.location.replace('index.php') </script>";
-                        // header('location: index.php');
-                    } else {
-                        echo "Zły login lub hasło";
-                    }
-                }
-            }
-        }
-        $conn->close();
-    ?></div>
+    <div class="wrongPasswd"></div>
 </body>
 </html>

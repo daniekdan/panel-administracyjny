@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+        if (!(isset($_SESSION['username']))) {
+             header('location: login.php');
+            exit;
+        }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,14 +41,5 @@
         <p>Projekt został wykonany przez:</p>
         <p>Adrian Lewek, Daniel Żymek, Sebastain Pietras</p>
     </div>
-
-    <?php 
-        session_start();
-        if ($_SESSION['username'] != 'Admin') {
-            echo "<script> window.location.replace('login.php') </script>";
-            // header('location: login.php');
-            exit;
-        }
-    ?>
 </body>
 </html>

@@ -8,13 +8,13 @@ Autorzy:
  - [x] Stworzenie gałęzi dla każdego
  - [x] Stworzenie pliku `index.html`
  - [x] Zbudowanie szkieletu aplikacji
- - [ ] Ogarnięcie szkieletu aplikacji, przygotowanie do stanu użyteczności publicznej
- - [ ] Zaimplementowanie SCSS
+ - [x] Ogarnięcie szkieletu aplikacji, przygotowanie do stanu użyteczności publicznej
+ - [x] Zaimplementowanie SCSS
  - [ ] Responsywność
  - [ ] Skrypt JS z opiniami użytkowników na sliderze
- - [ ] Podłączenie od bazy danych (PHP)
+ - [x] Podłączenie od bazy danych (PHP)
  - [ ] Zdobycie sponsorów
- - [ ] Opublikowanie pracy
+ - [x] Opublikowanie pracy
  - [ ] Piwo & grill
 
  ## Plan projektu, inspiracja
