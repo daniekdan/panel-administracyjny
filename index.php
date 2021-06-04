@@ -38,7 +38,8 @@
     <?php 
         session_start();
         if ($_SESSION['username'] != 'Admin') {
-            header('location: /login.php');
+            echo "<script> window.location.replace('login.php') </script>";
+            // header('location: login.php');
             exit;
         }
     ?>
