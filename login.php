@@ -39,7 +39,7 @@
                     if (($usernameW == $row["login"])&&($passwordW == $row["password"])){
                         session_start();
                         $_SESSION['username'] = 'Admin';
-                        header('location: index.php');
+                        header('location: /index.php');
                     } else {
                         echo "Zły login lub hasło";
                     }

@@ -38,7 +38,7 @@
     <?php 
         session_start();
         if ($_SESSION['username'] != 'Admin') {
-            header('location: login.php');
+            header('location: /login.php');
             exit;
         }
     ?>
