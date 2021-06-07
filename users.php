@@ -4,9 +4,9 @@
     $result = $conn->query($sql);
 
     if(isset($_POST['addUser'])){
-        $usernameW=$_POST['username'];
+        $usernameW=$_POST['newusername'];
         $loginW=$_POST['login'];
-        $passwordW=$_POST['passwd'];
+        $passwordW=$_POST['newpasswd'];
 
     $addUser = "INSERT INTO users (username, login, password)
     VALUES ('$usernameW', '$loginW', '$loginW')";
@@ -62,9 +62,9 @@
             <label class="label-text" for="login">Login:</label>
             <input class="input-text" type="text" id="login" name="login" required>
             <label class="label-text" for="username">Nazwa użytkownika:</label>
-            <input class="input-text" type="text" id="username" name="username" required>
-            <label class="label-text" for="passwd">Hasło:</label>
-            <input class="input-text" type="password" id="passwd" name="passwd" required>
+            <input class="input-text" type="text" id="newusername" name="newusername" required>
+            <label class="label-text" for="newpasswd">Hasło:</label>
+            <input class="input-text" type="password" id="newpasswd" name="newpasswd" required>
             <input type="submit" name="addUser" value="Dodaj">
         </form>
     </div>

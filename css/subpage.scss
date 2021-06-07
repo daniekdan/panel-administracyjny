@@ -20,7 +20,7 @@ $panel-color: white;
             max-height: 300px;
         }
         span {
-            color: grey;
+            color: $background-color;
             font-style: italic;
         }
     }
