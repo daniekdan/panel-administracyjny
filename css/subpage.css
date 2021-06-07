@@ -1,0 +1,113 @@
+.img-panel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.img-panel-container .img-panel-elem {
+  padding: 8px;
+  margin: 8px;
+  background-color: #333C48;
+  border-radius: 15px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.img-panel-container .img-panel-elem img {
+  display: block;
+  max-height: 300px;
+}
+
+.img-panel-container .img-panel-elem span {
+  color: grey;
+  font-style: italic;
+}
+
+.user-panel-container {
+  padding: 4px;
+}
+
+.user-panel-container table {
+  width: 50%;
+  border-spacing: 0;
+  border: 1px solid black;
+}
+
+.user-panel-container table td {
+  padding: 2px 4px;
+}
+
+.user-panel-container table tr:nth-child(even) {
+  background-color: #dedede;
+}
+
+.user-panel-container table thead {
+  background-color: #333C48;
+  color: white;
+}
+
+.addUser-container {
+  display: table;
+}
+
+.addUser-container h1 {
+  color: #e7e6eb;
+  text-align: center;
+  font-size: 1.75em;
+  margin-bottom: 30px;
+}
+
+.addUser-container .input-text {
+  display: table;
+  width: 300px;
+  margin: 0 auto 20px;
+  background-color: #3c4653;
+  border: none;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 20px;
+  color: white;
+  font-size: 0.75em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.addUser-container .input-text:focus, .addUser-container .input-text:hover {
+  background-color: #434e5c;
+  outline: none;
+}
+
+.addUser-container input[type=submit] {
+  width: 150px;
+  display: table;
+  margin: 0 auto;
+  color: white;
+  background-color: #ff790a;
+  border: none;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 0.75em;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.addUser-container input[type=submit]:hover {
+  background-color: #e76b05;
+}
+
+.addUser-container .label-text {
+  display: table;
+  margin: 0 auto 5px;
+}
+/*# sourceMappingURL=subpage.css.map */

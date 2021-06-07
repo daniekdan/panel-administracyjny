@@ -1,0 +1,96 @@
+$base-color: #333C48;
+$hover-base-color: #3c4653;
+$background-color: #e7e6eb;
+$panel-color: white;
+
+.img-panel-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    .img-panel-elem {
+        padding: 8px;
+        margin: 8px;
+        background-color: $base-color;
+        border-radius: 15px;
+        align-content: center;
+        display: grid;
+        justify-items: center;
+        img {
+            display: block;
+            max-height: 300px;
+        }
+        span {
+            color: grey;
+            font-style: italic;
+        }
+    }
+}
+
+.user-panel-container{
+    padding: 4px;
+    table {
+        width: 50%;
+        border-spacing: 0;
+        border: 1px solid black;
+    td {
+        padding: 2px 4px;
+    }
+    tr:nth-child(even){
+        background-color: #dedede;
+    }
+    thead {
+        background-color: $base-color;
+        color: white;
+    }
+    }
+}
+
+.addUser-container{
+    display: table;
+    h1{
+        color: $background-color;
+        text-align: center;
+        font-size: 1.75em;
+        margin-bottom: 30px;
+    }
+    .input-text{
+        display: table;
+        width: 300px;
+        margin: 0 auto 20px;
+        background-color: $hover-base-color;
+        border: none;
+        height: 40px;
+        border-radius: 20px;
+        padding-left: 20px;
+        color: white;
+        font-size: 0.75em;
+        transition: 0.2s;
+        &:focus, &:hover{
+            background-color: #434e5c;
+            outline: none;
+        }
+    }
+    input[type=submit] {
+        width: 150px;
+        display: table;
+        margin: 0 auto;
+        color: white;
+        background-color: rgb(255, 121, 10);
+        border: none;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 0.75em;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:hover{
+            background-color: rgb(231, 107, 5)
+        }
+    }
+    .label-text{
+        display: table;
+        margin: 0 auto 5px;
+        
+    }
+}

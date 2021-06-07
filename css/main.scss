@@ -1,0 +1,91 @@
+// $base-color: #3C3B6F;
+// $hover-base-color: #323158;
+$base-color: #333C48;
+$hover-base-color: #3c4653;
+$background-color: #e7e6eb;
+$panel-color: white;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+body{
+    background-color: $background-color;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-template-rows: minmax(250px, 5);
+    font-size: 24px;
+    
+}
+.header{
+    grid-column: 2/8;
+    grid-row: 1;
+    background-color: $base-color;
+    display: table;
+    .log-out{
+        position: absolute;
+        top: 10px;
+        
+        right: 10px;
+        cursor: pointer;
+        font-size: 1.6em;
+        color: $background-color;
+        a{ 
+            color: $background-color;
+        }
+    }
+    h1{
+        text-align: center;
+        font-size: 1.8em;
+        color: $panel-color;
+        margin: 5px 0 0 40px;
+    }
+
+}
+.navbar{
+    grid-row: 1/16;
+    background-color: $base-color;
+    user-select: none;
+    .logo{
+        display: table;
+        margin: 30px auto 10px;
+    }
+    li{
+        height: 50px;
+        font-size: 0.85em;
+        // text-align: center;
+        padding-left: 20px;
+        padding-top: 15px;
+        color: $background-color;
+        cursor: pointer;
+        
+        transition: 0.3s;
+        &:hover{
+            color: $panel-color;
+            background-color: $hover-base-color;
+        }
+        
+    }
+    
+}
+.container{
+    grid-column: 2/8;
+    // grid-row: 2/15;
+    
+}
+.footer{
+    grid-row: 15;
+    grid-column: 2/8;
+    background-color: $base-color;
+    padding-top: 10px;
+    p{
+        color: $background-color;
+        font-size: 0.7em;
+        text-align: center;
+    }
+}
