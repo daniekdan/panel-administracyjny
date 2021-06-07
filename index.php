@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+        if (!(isset($_SESSION['username']))) {
+             header('location: login.php');
+            exit;
+        }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +20,11 @@
 <body>
     <div class="header">
         <h1>Panel Administracyjny</h1>
+        <div>
+        <i class="fas fa-user-cog"></i>
+            <?php echo $_SESSION['username']?>
+            
+        </div>
         <div class="log-out"><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></div>
     </div>
     <div class="navbar">
@@ -20,27 +32,28 @@
         <ul>
             <li><i class="fas fa-folder-open"></i> Treść</li>
             <li><i class="fas fa-comments"></i> Forum</li>
-            <li><i class="fas fa-users"></i> Użytkownicy</li>
-            <li><i class="fas fa-desktop"></i> Grafika</li>
+            <a href="index.php?web=users"><li><i class="fas fa-users"></i> Użytkownicy</li></a>
+            <a href="index.php?web=images"><li><i class="fas fa-desktop"></i> Grafika</li></a>
             <li><i class="fas fa-wrench"></i> Narzędzia</li>
             <li><i class="fas fa-cog"></i> Konfiguracja</li>
             <li><i class="fas fa-tachometer-alt"></i> System</li>
         </ul>
     </div>
-    <div class="container">
+    <div id="container" class="container">
+        <?php
         
+        $web = $_GET['web'];
+        if (isset($_GET['web'])) {
+            require($web.'.php');
+        } else{
+            require('users.php');
+        }
+        ?>
     </div>
     <div class="footer">
         <p>Projekt został wykonany przez:</p>
         <p>Adrian Lewek, Daniel Żymek, Sebastain Pietras</p>
     </div>
 
-    <?php 
-        session_start();
-        if ($_SESSION['username'] != 'Admin') {
-            header('location: login.php');
-            exit;
-        }
-    ?>
 </body>
 </html>

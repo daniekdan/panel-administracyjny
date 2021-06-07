@@ -1,4 +1,4 @@
-# Panel adminisracyjny
+# Panel administracyjny
 Autorzy:
  - Adrian Lewek
  - Daniel Żymek
@@ -7,13 +7,14 @@ Autorzy:
  - [x] Wytłumaczenie Sebastianowi jak działa git
  - [x] Stworzenie gałęzi dla każdego
  - [x] Stworzenie pliku `index.html`
- - [ ] Zbudowanie szkieletu aplikacji
- - [ ] Zaimplementowanie SCSS
+ - [x] Zbudowanie szkieletu aplikacji
+ - [x] Ogarnięcie szkieletu aplikacji, przygotowanie do stanu użyteczności publicznej
+ - [x] Zaimplementowanie SCSS
  - [ ] Responsywność
  - [ ] Skrypt JS z opiniami użytkowników na sliderze
- - [ ] Podłączenie od bazy danych (PHP)
+ - [x] Podłączenie od bazy danych (PHP)
  - [ ] Zdobycie sponsorów
- - [ ] Opublikowanie pracy
+ - [x] Opublikowanie pracy
  - [ ] Piwo & grill
 
  ## Plan projektu, inspiracja

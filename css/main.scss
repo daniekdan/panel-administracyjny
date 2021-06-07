@@ -39,6 +39,13 @@ body{
             color: $background-color;
         }
     }
+    div{
+        position: absolute;
+        top: 15px;
+        color: $background-color;
+        right: 100px;
+        text-align: right;
+    }
     h1{
         text-align: center;
         font-size: 1.8em;
@@ -54,6 +61,9 @@ body{
     .logo{
         display: table;
         margin: 30px auto 10px;
+    }
+    a{
+        text-decoration: none;
     }
     li{
         height: 50px;
@@ -75,7 +85,7 @@ body{
 }
 .container{
     grid-column: 2/8;
-    grid-row: 2/15;
+    // grid-row: 2/15;
     
 }
 .footer{
