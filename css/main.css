@@ -69,6 +69,12 @@ body {
           user-select: none;
 }
 
+@media (max-width: 1180px) {
+  .navbar i {
+    display: none;
+  }
+}
+
 .navbar .logo {
   display: table;
   margin: 30px auto 10px;
@@ -77,7 +83,6 @@ body {
 .navbar a {
   text-decoration: none;
 }
-
 
 .navbar li {
   height: 50px;

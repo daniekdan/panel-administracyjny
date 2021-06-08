@@ -60,6 +60,11 @@ body{
     grid-row: 1/16;
     background-color: $base-color;
     user-select: none;
+    @media (max-width: 1180px) {
+        i {
+            display: none;
+        }
+    }
     .logo{
         display: table;
         margin: 30px auto 10px;

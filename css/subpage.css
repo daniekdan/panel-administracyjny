@@ -15,8 +15,8 @@
   margin: 8px;
   background-color: #333C48;
   border-radius: 15px;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
   display: -ms-grid;
   display: grid;
   justify-items: center;
@@ -28,23 +28,18 @@
 }
 
 .img-panel-container .img-panel-elem span {
-
   color: #e7e6eb;
-
   font-style: italic;
 }
 
 .user-panel-container {
   padding: 4px;
-
   display: table;
   margin: 40px auto;
 }
 
 .user-panel-container table {
   width: 750px;
-
-}
   border-spacing: 0;
   border: 1px solid black;
 }
@@ -61,7 +56,6 @@
   background-color: #333C48;
   color: white;
 }
-
 
 h2 {
   color: #333C48;
@@ -125,5 +119,72 @@ h2 {
 .addUser-container .label-text {
   display: table;
   margin: 0 auto 5px;
+}
+
+.topic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #333C48;
+  border: 1px, solid, black;
+  margin: 4px;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topic div {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+.topic-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.topic-title-first {
+  display: block;
+  font-size: 30px;
+}
+
+.post {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 166px auto;
+      grid-template-columns: 166px auto;
+  background-color: #333C48;
+  color: #FFF;
+  margin: 16px;
+  padding: 8px;
+}
+
+.post-author img,
+.post-author span {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+}
+
+.post-content {
+  margin-left: 8px;
+}
+
+.post-content span {
+  display: block;
+  width: 100%;
+}
+
+.post-content span:first-child {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.post-content img {
+  width: 95%;
 }
 /*# sourceMappingURL=subpage.css.map */

@@ -12,7 +12,7 @@ $panel-color: white;
         margin: 8px;
         background-color: $base-color;
         border-radius: 15px;
-        align-content: center;
+        align-content: space-evenly;
         display: grid;
         justify-items: center;
         img {
@@ -106,5 +106,64 @@ h2{
         display: table;
         margin: 0 auto 5px;
         
+    }
+}
+
+// Forum
+
+.topic {
+    display: flex;
+    background-color: $base-color;
+    border: 1px, solid, black;
+    margin: 4px;
+    color: $panel-color;
+    align-items: center;
+    div {
+        flex: auto;
+    }
+}
+
+.topic-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.topic-title-first {
+    display: block;
+    font-size: 30px;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 166px auto;
+    background-color: $base-color;
+    color: #FFF;
+    margin: 16px;
+    padding: 8px;
+}
+
+.post-author img,
+.post-author span {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+
+.post-content {
+    margin-left: 8px;
+    span {
+        display: block;
+        width: 100%;
+    }
+
+    span:first-child {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    img {
+        width: 95%;
     }
 }
