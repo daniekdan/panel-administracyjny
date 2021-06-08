@@ -20,11 +20,13 @@
 <body>
     <div class="header">
         <h1>Panel Administracyjny</h1>
+
         <div>
         <i class="fas fa-user-cog"></i>
             <?php echo $_SESSION['username']?>
             
         </div>
+
         <div class="log-out"><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></div>
     </div>
     <div class="navbar">
@@ -32,8 +34,10 @@
         <ul>
             <li><i class="fas fa-folder-open"></i> Treść</li>
             <li><i class="fas fa-comments"></i> Forum</li>
+
             <a href="index.php?web=users"><li><i class="fas fa-users"></i> Użytkownicy</li></a>
             <a href="index.php?web=images"><li><i class="fas fa-desktop"></i> Grafika</li></a>
+
             <li><i class="fas fa-wrench"></i> Narzędzia</li>
             <li><i class="fas fa-cog"></i> Konfiguracja</li>
             <li><i class="fas fa-tachometer-alt"></i> System</li>
@@ -41,6 +45,7 @@
     </div>
     <div id="container" class="container">
         <?php
+
         
         $web = $_GET['web'];
         if (isset($_GET['web'])) {
@@ -48,6 +53,7 @@
         } else{
             require('users.php');
         }
+
         ?>
     </div>
     <div class="footer">

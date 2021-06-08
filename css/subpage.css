@@ -28,18 +28,23 @@
 }
 
 .img-panel-container .img-panel-elem span {
+
   color: #e7e6eb;
+
   font-style: italic;
 }
 
 .user-panel-container {
   padding: 4px;
+
   display: table;
   margin: 40px auto;
 }
 
 .user-panel-container table {
   width: 750px;
+
+}
   border-spacing: 0;
   border: 1px solid black;
 }
@@ -56,6 +61,7 @@
   background-color: #333C48;
   color: white;
 }
+
 
 h2 {
   color: #333C48;

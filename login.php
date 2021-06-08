@@ -22,6 +22,7 @@
                         }
                     } else {
                         $_error = 2; 
+
                     }
                 }
             }
@@ -52,6 +53,7 @@
         </form>
     </div>
 
+
     <div class="wrongPasswd">
         <?php 
         switch ($_error) {
@@ -67,5 +69,6 @@
             }
         ?>
     </div>
+
 </body>
 </html>
