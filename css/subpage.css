@@ -28,16 +28,23 @@
 }
 
 .img-panel-container .img-panel-elem span {
-  color: grey;
+
+  color: #e7e6eb;
+
   font-style: italic;
 }
 
 .user-panel-container {
   padding: 4px;
+
+  display: table;
+  margin: 40px auto;
 }
 
 .user-panel-container table {
-  width: 50%;
+  width: 750px;
+
+}
   border-spacing: 0;
   border: 1px solid black;
 }
@@ -55,8 +62,17 @@
   color: white;
 }
 
+
+h2 {
+  color: #333C48;
+  text-align: center;
+  font-size: 1.75em;
+  margin: 50px 0 30px;
+}
+
 .addUser-container {
   display: table;
+  margin: 0 auto;
 }
 
 .addUser-container h1 {

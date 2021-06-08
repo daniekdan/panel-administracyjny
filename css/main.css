@@ -43,6 +43,14 @@ body {
   color: #e7e6eb;
 }
 
+.header div {
+  position: absolute;
+  top: 15px;
+  color: #e7e6eb;
+  right: 100px;
+  text-align: right;
+}
+
 .header h1 {
   text-align: center;
   font-size: 1.8em;
@@ -65,6 +73,11 @@ body {
   display: table;
   margin: 30px auto 10px;
 }
+
+.navbar a {
+  text-decoration: none;
+}
+
 
 .navbar li {
   height: 50px;

@@ -20,7 +20,9 @@ $panel-color: white;
             max-height: 300px;
         }
         span {
-            color: grey;
+
+            color: $background-color;
+
             font-style: italic;
         }
     }
@@ -28,8 +30,12 @@ $panel-color: white;
 
 .user-panel-container{
     padding: 4px;
+
+    display: table;
+    margin: 40px auto;
     table {
-        width: 50%;
+        width: 750px;
+
         border-spacing: 0;
         border: 1px solid black;
     td {
@@ -45,8 +51,16 @@ $panel-color: white;
     }
 }
 
+h2{
+    color: $base-color;
+    text-align: center;
+    font-size: 1.75em;
+    margin: 50px 0 30px;
+}
 .addUser-container{
     display: table;
+    margin: 0 auto;
+
     h1{
         color: $background-color;
         text-align: center;
