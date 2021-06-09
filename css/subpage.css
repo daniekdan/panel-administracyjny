@@ -121,6 +121,16 @@ h2 {
   margin: 0 auto 5px;
 }
 
+.forum-panel-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.forum-panel-container a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .topic {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,6 +138,7 @@ h2 {
   background-color: #333C48;
   border: 1px, solid, black;
   margin: 4px;
+  padding: 4px;
   color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -186,5 +197,36 @@ h2 {
 
 .post-content img {
   width: 95%;
+}
+
+.main-panel-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.main-panel-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-panel-container a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.main-panel-container .title {
+  font-size: 40px;
+}
+
+.main-panel-container div {
+  background-color: #333C48;
+  color: #FFF;
+  margin: 16px;
+  padding: 8px;
 }
 /*# sourceMappingURL=subpage.css.map */

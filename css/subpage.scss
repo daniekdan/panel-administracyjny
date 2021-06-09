@@ -111,11 +111,23 @@ h2{
 
 // Forum
 
+.forum-panel-container {
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
 .topic {
     display: flex;
     background-color: $base-color;
     border: 1px, solid, black;
     margin: 4px;
+    padding: 4px;
     color: $panel-color;
     align-items: center;
     div {
@@ -166,4 +178,27 @@ h2{
     img {
         width: 95%;
     }
+}
+
+.main-panel-container {
+    display: inline-flex;
+    flex-direction: row;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .title{
+        font-size: 40px;
+    }
+    div {
+    background-color: $base-color;
+    color: #FFF;
+    margin: 16px;
+    padding: 8px;
+    }
+    
 }
