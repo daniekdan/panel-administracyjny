@@ -10,8 +10,8 @@ Autorzy:
  - [x] Zbudowanie szkieletu aplikacji
  - [x] Ogarnięcie szkieletu aplikacji, przygotowanie do stanu użyteczności publicznej
  - [x] Zaimplementowanie SCSS
- - [ ] Responsywność
- - [ ] Skrypt JS z opiniami użytkowników na sliderze
+ - [x] Responsywność
+ - [x] Skrypt JS z opiniami użytkowników na sliderze
  - [x] Podłączenie od bazy danych (PHP)
  - [ ] Zdobycie sponsorów
  - [x] Opublikowanie pracy
