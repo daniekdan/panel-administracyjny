@@ -56,6 +56,5 @@
         <p>Projekt został wykonany przez:</p>
         <p>Adrian Lewek, Daniel Żymek, Sebastain Pietras</p>
     </div>
-
 </body>
 </html>
