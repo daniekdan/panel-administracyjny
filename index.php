@@ -31,7 +31,7 @@
         <div class="log-out"><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></div>
     </div>
     <div class="navbar">
-        <div class="logo" id="logo"><img src="/img/logo.png" alt=""></div>
+        <div class="logo" id="logo"><img src="img/logo.png" alt=""></div>
         <ul id="list" class='hide-li'>
             <a href="index.php?web=main"><li><i class="fas fa-folder-open"></i> Treść</li></a>
             <a href="index.php?web=forum"><li><i class="fas fa-comments"></i> Forum</li></a>
