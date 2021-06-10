@@ -1,7 +1,7 @@
 <?php 
     session_start();
         if (!(isset($_SESSION['username']))) {
-             header('location: login.php');
+             header('location: dashboard.php');
             exit;
         }
     ?>
@@ -31,7 +31,7 @@
         <div class="log-out"><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></div>
     </div>
     <div class="navbar">
-        <div class="logo" id="logo"><img src="https://technikum.wroclaw.pl/templates/technikum_ne_v3/images/designer/fa9c37de50ee3da213beadf66018b164_logo.png" alt="logo"></div>
+        <div class="logo" id="logo"><img src="logo.png" alt="logo"></div>
         <ul id="list" class='hide-li'>
             <a href="index.php?web=main"><li><i class="fas fa-folder-open"></i> Treść</li></a>
             <a href="index.php?web=forum"><li><i class="fas fa-comments"></i> Forum</li></a>
