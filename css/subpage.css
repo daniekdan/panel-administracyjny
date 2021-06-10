@@ -200,18 +200,25 @@ h2 {
 }
 
 .main-panel-container {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  width: 100%;
+  max-width: 1114px;
 }
 
 .main-panel-container a {
   text-decoration: none;
   color: inherit;
+  margin-top: 5px;
 }
 
 .main-panel-container a:hover {
@@ -223,10 +230,74 @@ h2 {
   font-size: 40px;
 }
 
-.main-panel-container div {
+.main-panel-container .container-fb {
   background-color: #333C48;
   color: #FFF;
-  margin: 16px;
+  margin: 8px 16px;
+  padding: 10px;
+  height: 400px;
+  width: 350px;
+}
+
+.main-panel-container .posts {
+  background-color: #333C48;
+  color: #FFF;
+  margin: 8px 16px;
   padding: 8px;
+  width: 700px;
+  height: 400px;
+}
+
+.main-panel-container .posts .post-preview {
+  margin: 10px;
+}
+
+.main-panel-container .opinion-chart {
+  margin: 8px 16px;
+  width: 1082px;
+  min-height: 350px;
+  background-color: #333C48;
+}
+
+.main-panel-container .opinion-chart #chartContainer {
+  width: 350px;
+  height: 300px;
+  margin: 25px;
+  float: left;
+}
+
+.main-panel-container .opinion-chart .opinions {
+  color: white;
+}
+
+.main-panel-container .opinion-chart .post-preview {
+  margin: 10px;
+}
+
+@media (max-width: 1025px) {
+  .main-panel-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-panel-container .posts, .main-panel-container .opinion-chart {
+    width: 90%;
+  }
+}
+
+@media (max-width: 890px) {
+  .user-panel-container table {
+    width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .main-panel-container .opinion-chart {
+    display: table;
+  }
+  .main-panel-container .opinion-chart #chartContainer {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 /*# sourceMappingURL=subpage.css.map */
