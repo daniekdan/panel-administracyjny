@@ -43,6 +43,14 @@ body {
   color: #e7e6eb;
 }
 
+.header div {
+  position: absolute;
+  top: 15px;
+  color: #e7e6eb;
+  right: 100px;
+  text-align: right;
+}
+
 .header h1 {
   text-align: center;
   font-size: 1.8em;
@@ -61,9 +69,19 @@ body {
           user-select: none;
 }
 
+@media (max-width: 1180px) {
+  .navbar i {
+    display: none;
+  }
+}
+
 .navbar .logo {
   display: table;
   margin: 30px auto 10px;
+}
+
+.navbar a {
+  text-decoration: none;
 }
 
 .navbar li {
@@ -86,9 +104,6 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 6;
   grid-column: 2/8;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 13;
-  grid-row: 2/15;
 }
 
 .footer {

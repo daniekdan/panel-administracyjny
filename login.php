@@ -13,11 +13,16 @@
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
                     if (($usernameW == $row["login"])&&($passwordW == $row["password"])){
-                        session_start();
-                        $_SESSION['username'] = 'Admin';
-                        header('location: index.php');
+                        if ($row["admin"] == 1) {
+                            session_start();
+                            $_SESSION['username'] = $row['username'];
+                            header('location: index.php');
+                        } else {
+                            $_error = 1;
+                        }
                     } else {
-                        echo "Zły login lub hasło";
+                        $_error = 2; 
+
                     }
                 }
             }
@@ -48,6 +53,20 @@
         </form>
     </div>
 
-    <div class="wrongPasswd"></div>
+    <div class="wrongPasswd">
+        <?php 
+        switch ($_error) {
+            case 2:
+                echo "Zły login lub hasło";
+                break;
+            case 1:
+                echo "Niewsytarczające uprawnienia";
+                break;
+            default:
+                break;
+            
+            }
+        ?>
+    </div>
 </body>
 </html>

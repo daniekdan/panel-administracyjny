@@ -39,6 +39,15 @@ body{
             color: $background-color;
         }
     }
+
+    div{
+        position: absolute;
+        top: 15px;
+        color: $background-color;
+        right: 100px;
+        text-align: right;
+    }
+
     h1{
         text-align: center;
         font-size: 1.8em;
@@ -51,10 +60,20 @@ body{
     grid-row: 1/16;
     background-color: $base-color;
     user-select: none;
+    @media (max-width: 1180px) {
+        i {
+            display: none;
+        }
+    }
     .logo{
         display: table;
         margin: 30px auto 10px;
     }
+
+    a{
+        text-decoration: none;
+    }
+
     li{
         height: 50px;
         font-size: 0.85em;
@@ -75,7 +94,7 @@ body{
 }
 .container{
     grid-column: 2/8;
-    grid-row: 2/15;
+    // grid-row: 2/15;
     
 }
 .footer{
