@@ -31,7 +31,7 @@
         <div class="log-out"><a href="logout.php"><i class="fas fa-sign-out-alt"></i></a></div>
     </div>
     <div class="navbar">
-        <div class="logo" id="logo"><img src="logo.png" alt="logo"></div>
+        <div class="logo" id="logo"><img src="https://github.com/danzym509/panel-administracyjny/blob/master/img/logo.png?raw=true" alt="logo"></div>
         <ul id="list" class='hide-li'>
             <a href="index.php?web=main"><li><i class="fas fa-folder-open"></i> Treść</li></a>
             <a href="index.php?web=forum"><li><i class="fas fa-comments"></i> Forum</li></a>
