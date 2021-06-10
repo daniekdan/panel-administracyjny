@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="https://technikum.wroclaw.pl/templates/technikum_ne_v3/images/designer/fa9c37de50ee3da213beadf66018b164_logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f91ad18e4a.js" crossorigin="anonymous"></script>
     <title>Document</title>
