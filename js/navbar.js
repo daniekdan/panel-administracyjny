@@ -1,10 +1,10 @@
-let element = document.getElementById("logo");
-let list = document.getElementById("list")
-let hide = false;
+var element = document.getElementById("logo");
+var menu_list = document.getElementById("menu_list")
+var hide = false;
 // console.log(element)
 element.addEventListener('click', () => {
     if (window.innerWidth < 526) {
-        list.classList.toggle("hide-li");
+        menu_list.classList.toggle("hide-li");
         
     }
 });

@@ -32,7 +32,7 @@
     </div>
     <div class="navbar">
         <div class="logo" id="logo"><img src="img/logo.png" alt=""></div>
-        <ul id="list" class='hide-li'>
+        <ul id="menu_list" class='hide-li'>
             <a href="index.php?web=main"><li><i class="fas fa-folder-open"></i> Treść</li></a>
             <a href="index.php?web=forum"><li><i class="fas fa-comments"></i> Forum</li></a>
             <a href="index.php?web=users"><li><i class="fas fa-users"></i> Użytkownicy</li></a>
