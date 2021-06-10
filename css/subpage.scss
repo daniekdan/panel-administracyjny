@@ -4,6 +4,7 @@ $background-color: #e7e6eb;
 $panel-color: white;
 
 .img-panel-container {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -18,6 +19,7 @@ $panel-color: white;
         img {
             display: block;
             max-height: 300px;
+            width: 100%;
         }
         span {
 

@@ -43,6 +43,10 @@ body {
   color: #e7e6eb;
 }
 
+.header a:link {
+  background-color: inherit !important;
+}
+
 .header div {
   position: absolute;
   top: 15px;
@@ -67,6 +71,7 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  min-width: 140px;
 }
 
 @media (max-width: 1180px) {
@@ -81,7 +86,7 @@ body {
 }
 
 .navbar a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .navbar li {
@@ -91,6 +96,7 @@ body {
   padding-top: 15px;
   color: #e7e6eb;
   cursor: pointer;
+  list-style-type: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
