@@ -42,10 +42,8 @@
     </div>
     <div id="container" class="container">
         <?php
-
-        
-        $web = $_GET['web'];
         if (isset($_GET['web'])) {
+            $web = $_GET['web'];
             require($web.'.php');
         } else{
             require('main.php');

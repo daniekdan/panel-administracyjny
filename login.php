@@ -1,6 +1,7 @@
 <?php 
     $dir = dirname(dirname(__FILE__));
         $conn = new mysqli('sql11.freesqldatabase.com', 'sql11415253', 'w8V7l128UD', 'sql11415253');
+        $_error = 0;
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);   
         }

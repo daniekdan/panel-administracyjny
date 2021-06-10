@@ -13,7 +13,6 @@
 <body>
 <div class="forum-panel-container">
         <?php 
-            $topic = $_GET['topic'];
             if (!isset($_GET['topic'])) {
                 $sql = "SELECT watki.ID, watki.tytul, watki.autor, users.ID AS uID, users.username FROM watki JOIN users ON watki.autor = users.ID;";
                 $result = $conn->query($sql);
@@ -22,7 +21,8 @@
                         echo('<a href="index.php?web=forum&topic=' . $row['ID'] . '"><div class="topic"><div class="topic-title"><span class="topic-title-first">' . $row['tytul'] . '</span><span>Autor: ' . $row['username'] . '</span></div></div></a>');
                     }
                 }
-            } else{
+            } else {
+                $topic = $_GET['topic'];
                 $sql = "SELECT posty.ID_watku, posty.autor, posty.tresc, users.ID AS uID, users.username FROM posty JOIN users ON posty.autor = users.ID WHERE posty.ID_watku = $topic;";
                 $result = $conn->query($sql);
                 if ($result->num_rows > 0) {
